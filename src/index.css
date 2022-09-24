@@ -8,28 +8,33 @@ body {
   font-family: 'Open Sans';
   font-size: 1.2em;
 }
-.checkbox {
-  background-color: #fff;
-  padding: 0.4em;
-}
-input {
+input,
+button {
   border: none;
   font: inherit;
+  background: none;
+}
+.list-item {
+  width: 100%;
+  background-color: white;
+  position: relative;
   padding: 0.4em;
+  box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.3);
 }
-
-input:focus {
-  outline: 0;
-  border: 0;
+.checkbox {
+  padding-right: 0.4em;
 }
-
 .pin-button {
-  width: 50px;
-  height: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 40px;
 }
 .icon-star {
-  content: '★';
-  color: black;
-  width: 50px;
-  height: 50px;
+  font-size: 1.5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #52b3eb;
 }
