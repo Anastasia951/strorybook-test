@@ -38,7 +38,7 @@ const Task = ({ task: { id, title, state }, onArchiveTask, onPinTask }) => {
           aria-label={`pinTask-${id}`}
           key={`pinTask-${id}`}
         >
-          <span className={`icon-star`}>★</span>
+          <span className={`icon-star ${state === 'TASK_PINNED' ? 'active' : 'non-active'}`}>★</span>
         </button>
       )}
     </div>
